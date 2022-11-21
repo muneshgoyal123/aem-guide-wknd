@@ -1,0 +1,104 @@
+<!--/* <section class="cmp-vartical-teaser-contain">
+  <div class="swiper cmp-vartical-teaser__swiper">
+    <div class="swiper-wrapper cmp-vartical-teaser__swiper-wrapper">
+    <sly data-sly-repeat.carousalimages="${resource.getChildren}">
+              <sly data-sly-test="${carousalimages.name == 'carousal'}">
+                 <sly data-sly-repeat.carousal="${carousalimages.getChildren}">
+      <div class="swiper-slide cmp-vartical-teaser__swiper-slide">
+      <img src="${carousal.images}" loading="lazy" class="cmp-image__image" alt="carousal"/>
+      <meta itemprop="caption" content="carousal" />
+      </div>
+      </sly>
+        </sly>
+          </sly>
+    </div>
+    
+    <div class="swiper-button-next cmp-vartical-teaser__swiper__button-next">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="m8.5 2.1 9.9 9.9-9.9 9.9"
+          stroke="#353435"
+          stroke-width="2.25"
+          fill="none"
+          fill-rule="evenodd"
+        ></path>
+      </svg>
+    </div>
+    <div class="swiper-button-prev cmp-vartical-teaser__swiper__button-prev">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M15.5 2.1 5.6 12l9.9 9.9"
+          stroke="#353435"
+          stroke-width="2.25"
+          fill="none"
+          fill-rule="evenodd"
+        ></path>
+      </svg>
+    </div>
+    <div
+      class="swiper-pagination cmp-vartical-teaser__swiper__pagination"
+    ></div>
+  </div>
+</section> */-->
+
+<section class="cmp-vartical-teaser-contain">
+  <div class="swiper cmp-vartical-teaser__swiper">
+    <div class="swiper-wrapper cmp-vartical-teaser__swiper-wrapper">
+      <sly data-sly-repeat.carousalimages="${resource.getChildren}">
+        <sly data-sly-test="${carousalimages.name == 'carousal'}">
+          <sly data-sly-repeat.carousal="${carousalimages.getChildren}">
+            <div class="swiper-slide cmp-vartical-teaser__swiper-slide">
+              <div class="teaser light vertical-align">
+                <div class="cmp-teaser">
+                  <div class="cmp-teaser__content">
+                    <h2 class="cmp-teaser__title">${carousal.title}</h2>
+                    <div class="cmp-teaser__description">
+                      <p>${carousal.description}</p>
+                    </div>
+                  </div>
+                  <div class="cmp-teaser__image">
+                    <div class="cmp-image">
+                      <img
+                        src="${carousal.images}"
+                        loading="lazy"
+                        class="cmp-image__image"
+                        alt="carousal"
+                      />
+                      <meta itemprop="caption" content="carousal" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </sly>
+        </sly>
+      </sly>
+    </div>
+
+    <div class="swiper-button-next cmp-vartical-teaser__swiper__button-next">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="m8.5 2.1 9.9 9.9-9.9 9.9"
+          stroke="#353435"
+          stroke-width="2.25"
+          fill="none"
+          fill-rule="evenodd"
+        ></path>
+      </svg>
+    </div>
+    <div class="swiper-button-prev cmp-vartical-teaser__swiper__button-prev">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M15.5 2.1 5.6 12l9.9 9.9"
+          stroke="#353435"
+          stroke-width="2.25"
+          fill="none"
+          fill-rule="evenodd"
+        ></path>
+      </svg>
+    </div>
+    <div
+      class="swiper-pagination cmp-vartical-teaser__swiper__pagination"
+    ></div>
+  </div>
+</section>

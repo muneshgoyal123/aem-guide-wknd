@@ -1,0 +1,30 @@
+<sly data-sly-use.model="com.adobe.aem.guides.wknd.core.models.Multitab" 
+data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+
+
+<div class="cmp-container">
+   <div class="cmp-container__imagecontainer">
+   <img src="${model.image}"/></div>
+   <div class="cmp-container-center">${model.data}</div>
+   
+
+
+
+<div class="cmp-container-title">
+<p>Main Title:${model.title1}</p> 
+   </div>
+    <div class="cmp-container_item" data-sly-list.item="${model.books}">
+    <ul>
+        <li>Name: ${item.title2}</li><span>|</span>
+        <li>Date: ${item.date}</li><br>
+        <li>Description: ${item.description}</li><br>
+        <li>Copies: ${item.copies}</li>
+        <br>
+    </ul>
+</div> 
+
+</div>
+  
+   </sly>
+
+

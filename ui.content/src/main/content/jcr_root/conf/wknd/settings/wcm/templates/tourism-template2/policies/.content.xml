@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-04-04T10:52:39.721+05:30"
+        cq:lastModifiedBy="admin"
+        cq:policy="wknd/components/page/policy"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="wcm/core/components/policies/mappings">
+        <root
+            cq:policy="wknd/components/container/policy_1574694950110"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/core/components/policies/mapping">
+            <container
+                cq:policy="wknd/components/container/policy_1574695586800"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping"/>
+            <container_1582363180 jcr:primaryType="nt:unstructured">
+                <experiencefragment
+                    cq:policy="wknd/components/experiencefragment/policy_321804759531400"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/core/components/policies/mapping"/>
+            </container_1582363180>
+            <container_1135423883 jcr:primaryType="nt:unstructured">
+                <image
+                    cq:policy="wknd/components/image/policy_321804835829700"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/core/components/policies/mapping"/>
+            </container_1135423883>
+            <container_1862764217 jcr:primaryType="nt:unstructured">
+                <text
+                    cq:policy="wknd/components/text/policy_321804856602000"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/core/components/policies/mapping"/>
+            </container_1862764217>
+            <container_1723022379 jcr:primaryType="nt:unstructured">
+                <experiencefragment
+                    cq:policy="wknd/components/experiencefragment/policy_321804878465200"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/core/components/policies/mapping"/>
+            </container_1723022379>
+        </root>
+    </jcr:content>
+</jcr:root>

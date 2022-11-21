@@ -1,0 +1,57 @@
+<sly
+  data-sly-use.model="com.adobe.aem.guides.wknd.core.models.MultiComponent"
+  data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+>
+  <sly data-sly-test="${!model.empty}">
+    alignChildren:
+    <div class="cmp-readfieldfrompage__alignChildren">
+      ${model.alignChildren}
+    </div>
+    fruitType:
+    <div class="cmp-readfieldfrompage__fruitType">${model.fruitType}</div>
+    columnLast:
+    <div class="cmp-readfieldfrompage__columnLast">${model.columnLast}</div>
+    hideMismatches:
+    <div class="cmp-readfieldfrompage__fhideMismatches">
+      ${model.hideMismatches}
+    </div>
+    backgroundColor:
+    <div
+      class="cmp-readfieldfrompage__backgroundColor"
+      style="background-color:${model.backgroundColor @ context = 'html' } "
+    >
+      bbbbbb
+    </div>
+    headlines:
+    <div data-sly-repeat="${model.headlines}">
+      ${model.headlines @context='html'}
+    </div>
+    columnWidth:
+    <div class="cmp-readfieldfrompage__columnWidth">${model.columnWidth}</div>
+    coralcolumnWidth:
+    <div class="cmp-readfieldfrompage__columnWidth">
+      ${properties.coralcolumnWidth}
+    </div>
+    buttonPath:
+    <div class="cmp-readfieldfrompage__buttonPath">
+      ${properties.buttonPath}
+    </div>
+    buttonPathCoral:
+    <div class="cmp-readfieldfrompage__buttonPath">
+      ${properties.buttonPathCoral}
+    </div>
+
+    longDescriptionText:
+    <div class="cmp-readfieldfrompage__longDescriptionText">
+      ${properties.longDescriptionText}
+    </div>
+
+    linkColor:
+    <div class="cmp-readfieldfrompage__linkColor">${properties.linkColor}</div>
+    linkColorCoral:
+    <div class="cmp-readfieldfrompage__linkColorCoral">
+      ${properties.linkColorCoral}
+    </div>
+  </sly>
+</sly>
+<sly data-sly-call="${templates.placeholder @ isEmpty = model.empty}"></sly>

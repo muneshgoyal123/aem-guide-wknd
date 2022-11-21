@@ -1,0 +1,42 @@
+<div
+  data-sly-use.search="com.adobe.aem.guides.wknd.core.models.CustomSearch"
+  data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+  data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+  id="${component.id}"
+  class="cmp-customsearch"
+  data-cmp-is="customsearch"
+>
+  <div
+    class="cmp-customsearch__field"
+    style="display: flex"
+    data-cmp-customsearch-path="${search.searchPath}"
+    data-cmp-customsearch-limit="${search.searchResultLimit}"
+  >
+    <!--            TODO: Remove inline styles while styling the component-->
+    <input
+      class="cmp-customsearch__input"
+      style="margin-right: 20px"
+      data-cmp-hook-customsearch="input"
+      type="text"
+      name="fulltext"
+      role="combobox"
+      aria-autocomplete="list"
+      aria-haspopup="true"
+      aria-invalid="false"
+    />
+    <div class="cmp-customsearch__search">
+      <button
+        class="cmp-customsearch__search-button cmp-button"
+        data-cmp-hook-customsearch="search"
+      >
+        FIND RESULTS
+      </button>
+    </div>
+  </div>
+  <div
+    class="cmp-customsearch__results"
+    data-cmp-hook-search="results"
+    role="listbox"
+    aria-multiselectable="false"
+  ></div>
+</div>

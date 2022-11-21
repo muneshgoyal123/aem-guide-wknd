@@ -1,0 +1,73 @@
+.skip-to-content {
+  background-color: #f7f7f7;
+  color: #333;
+  position: absolute;
+  padding: 12px;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: underline;
+  transition: all 0.03s ease-in-out;
+&:focus {
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1000;
+}
+}
+
+.custom-container {
+  @extend .container-lg;
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.structural-rendering--gray {
+  background-color: var(--clr-secondary-light);
+}
+
+.structural-rendering--accent {
+  background-color: var(--bs-accent-secondary);
+}
+
+.learnmore-img{
+  display: inline-block;
+  margin-left: 1rem;
+  &:hover{
+    filter: hue-rotate(165deg);
+  }
+}
+
+.date-text{
+  color: $accent-secondary;
+}
+
+.slanted-border{
+  &-bgimg{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 60%;
+    background-color: var(--clr-accent-secondary);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    margin-left: 49%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    -webkit-clip-path: polygon(0% 0%, 100% 11%, 100% 50%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 11%, 100% 50%, 100% 100%, 0% 100%);
+  }
+
+}

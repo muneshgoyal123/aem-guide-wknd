@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-04-18T14:33:57.878+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/wknd/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Home"
+        sling:resourceType="wknd/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wknd/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wknd/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:lastModified="{Date}2022-03-30T11:17:25.279+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Welcome To Rajasthan Tourism"
+                    sling:resourceType="wknd/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd/components/container"
+                    layout="responsiveGrid">
+                    <navbarcomponent
+                        jcr:created="{Date}2022-04-14T17:20:45.833+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-04-14T17:20:45.833+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wknd/components/navbarcomponent">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <phone
+                                jcr:primaryType="nt:unstructured"
+                                offset="1"
+                                width="10"/>
+                        </cq:responsive>
+                    </navbarcomponent>
+                    <contentfragment
+                        jcr:created="{Date}2022-04-18T14:33:44.810+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-04-18T14:33:57.850+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wknd/components/contentfragment"
+                        displayMode="multi"
+                        fragmentPath="/content/dam/wknd/contentfragment3/biography"
+                        paragraphScope="all"
+                        text="Biography Title Albert Hall Description Albert Hall The Albert Hall Museum in Jaipur, is the oldest museum of the state and functions as the state museum of Rajasthan, India. The building is situated in Ram Niwas garden outside the city wall opposite New gate and is a fine example of Indo-Saracenic architecture. It is also called the Government Central Museum. Date&amp;Time 2022-04-18 14:31"
+                        variationName="master"/>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

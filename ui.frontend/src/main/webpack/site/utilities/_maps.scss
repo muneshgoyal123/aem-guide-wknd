@@ -1,0 +1,67 @@
+/// Z-indexes map, gathering all Z layers of the application
+/// @access private
+/// @type Map
+/// @prop {String} key - Layer’s name
+/// @prop {Number} value - Z value mapped to the key
+$z-indexes: (
+  "modal": 5000,
+  "dropdown": 4000,
+  "default": 1,
+  "below": -1,
+);
+
+/// Colors map, gathering all Colors of the application
+/// @access private
+/// @type Map
+/// @prop {String} key - color shade name
+/// @prop {Number} value - color value mapped to the key
+$colors: (
+  unquote("white"): #ffffff,
+  unquote("black"): #000000,
+
+  primary: $primary,
+  primary-light: lighten($primary, 10%),
+  primary-dark: lighten($primary, 10%),
+  primary-darker: lighten($primary, 15%),
+
+  secondary: $secondary,
+  secondary-light: #f7f7f7,
+  secondary-lighter: #f0f0f0,
+  secondary-dark: darken($secondary, 10%),
+  secondary-darker: darken($secondary, 15%),
+  
+  accent-primary: $accent-primary,
+  accent-primary-lighter: lighten($accent-primary, 10%),
+  accent-secondary: $accent-secondary,
+  select-color:#646464,
+  input-color:#bcbcbc,
+  banner-text-bg:#F5F5F5,
+  header-dropdown-link-hover-color:#35CE28,
+);
+
+/// Fonts map, gathering all Fonts of the application
+/// @access private
+/// @type Map
+/// @prop {String} key - font variant name
+/// @prop {Number} value - font value mapped to the key
+$fonts: (
+  primary: $primary-font,
+  secondary: $secondary-font,
+);
+
+/// Font-sizes map, gathering all Fonts of the application
+/// @access private
+/// @type Map
+/// @prop {String} key - Element name
+/// @prop {Number} value - font-size value mapped to the key
+$font-sizes: (
+  "h1": 40px,
+  "h2": 35px,
+  "h3": 25px,
+  "h4": 20px,
+  "h5": 18px,
+  "h6": 16px,
+  "bodyCopy": 16px,
+  "link": 16px,
+  "breadcrumb": 16px,
+);

@@ -1,0 +1,297 @@
+$carsufix: "card";
+
+:root {
+  --card-bg: var(--clr-white);
+  --card-padding: 0;
+  --card-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --card-radius: 0;
+  --card-border: 0;
+  --card-footer-bg: #f0f0f0;
+  --card-image-radius: 0;
+  --card-body-padding: 36px 36px 36px 36px;
+
+  --card-title-family: var(--font-primary);
+  --card-title-size: 18px;
+  --card-title-weight: 700;
+  --card-title-height: 25px;
+  --card-title-spacing: 0.02em;
+
+  --card-text-family: var(--font-primary);
+  --card-text-size: 16px;
+  --card-text-weight: 400;
+  --card-text-height: 28px;
+  --card-text-spacing: 0;
+
+  --card-align-center: center;
+  --card-align-left: left;
+  --card-align-right: right;
+}
+
+.#{$carsufix} {
+  background-color: var(--card-bg);
+  padding: var(--card-padding);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  border: var(--card-border);
+  // margin-top: 33px;
+  overflow: hidden;
+
+  &-body {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    padding: var(--card-body-padding);
+  }
+
+  &-title {
+    font-family: var(--card-title-family);
+    font-size: var(--font-h3-size);
+    font-weight: var(--font-title-h3-weight);
+    line-height: var(--card-title-height);
+    letter-spacing: var(--card-title-spacing);
+  }
+
+  &-text {
+    font-family: var(--card-text-family);
+    font-size: var(--card-text-size);
+    font-weight: var(--card-text-weight);
+    line-height: var(--card-text-height);
+    letter-spacing: var(--card-text-spacing);
+  }
+
+  &-link {
+  }
+
+  a {
+    .card-img-top {
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    &:hover {
+      .card-img-top {
+        transform: scale(1.08);
+      }
+    }
+  }
+
+  &-img {
+    &,
+    &-top {
+      border-radius: var(--card-image-radius);
+      position: relative;
+    }
+  }
+
+  &-ribbon {
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 22px 0px auto auto;
+      height: 50px;
+      width: 10px;
+      background: var(--clr-primary);
+      transform: rotate(22deg);
+    }
+
+    &::after {
+      content: attr(data-label);
+      position: absolute;
+      inset: 0px -9px auto auto;
+      width: min-content;
+      min-width: 100px;
+      background: var(--clr-primary);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      padding: 3px 15px 3px 10px;
+      font-size: 20px;
+      color: var(--clr-white);
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+    }
+  }
+
+  .btn-link {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    // removed color styled
+    font-weight: 700;
+
+    & .fa-stethoscope {
+      color: $accent-secondary;
+    }
+  }
+
+  @at-root .image-#{$carsufix} {
+    --card-body-padding: 17px;
+    --card-title-size: 25px;
+    --card-title-weight: 400;
+    --card-title-height: 34px;
+    --card-text-size: 16px;
+
+    .btn-link {
+      width: max-content; //to fix the width for btn
+    }
+  }
+
+  @at-root .featured-#{$carsufix} {
+    --card-body-padding: 28px 40px;
+    --card-title-size: var(--font-title-h3-size);
+    --card-title-weight: 400;
+    --card-title-height: 34px;
+    margin-top: 0;
+  }
+
+  @at-root .location-#{$carsufix} {
+    --card-body-padding: 17px;
+  }
+
+  @at-root .article-#{$carsufix} {
+    & .#{$carsufix}-title {
+      color: var(--clr-primary);
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    &-container {
+      @extend .custom-container;
+      margin: 50px 0;
+
+      .right-align {
+        float: right;
+      }
+    }
+  }
+
+  @at-root .speciality-#{$carsufix} {
+    --card-body-padding: 28px;
+    height: 100%;
+
+    & .#{$carsufix}-title {
+      text-align: var(--card-align-center);
+    }
+  }
+
+  @at-root .bio-#{$carsufix} {
+    & .#{$carsufix}-title {
+      color: $black;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 27px;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  @at-root .patient_story-#{$carsufix} {
+    & .#{$carsufix}-title {
+      color: var(--clr-primary);
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+
+  @at-root .news-#{$carsufix} {
+    & .#{$carsufix}-title {
+      color: var(--clr-primary);
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    & .#{$carsufix}-date {
+      color: $accent-secondary;
+    }
+
+    & .#{$carsufix}-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+    }
+  }
+
+  @at-root .landing-page {
+    height: 100%;
+
+    .card-img-top {
+      @include min-screen(xl) {
+        min-height: 258px;
+      }
+    }
+  }
+
+  @at-root .article-#{$carsufix} {
+    height: 100%;
+  }
+
+  @at-root .location-#{$carsufix} {
+    & .#{$carsufix}-title {
+      color: $black;
+    }
+
+    & .#{$carsufix}-date {
+      color: $accent-secondary;
+    }
+  }
+
+  // card varients : black || orange || blue
+  // should be use with card class only
+  &.card-bg-black {
+    background-color: var(--clr-black);
+
+    .card-title {
+      color: var(--clr-white);
+    }
+
+    .card-text {
+      color: var(--clr-white);
+    }
+  }
+
+  &.card-bg-orange {
+    background-color: var(--clr-accent-secondary);
+
+    .card-title {
+      color: var(--clr-white);
+    }
+
+    .card-text {
+      color: var(--clr-white);
+    }
+  }
+
+  &.card-bg-blue {
+    background-color: var(--clr-primary);
+
+    .card-title {
+      color: var(--clr-white);
+    }
+
+    .card-text {
+      color: var(--clr-white);
+    }
+  }
+}
+
+.path-img {
+  display: inline;
+  padding-left: 10px;
+  margin-bottom: 8px;
+  max-width: 24px;
+}
+
+.white-icon {
+  filter: brightness(0) invert(1);
+  width: unset !important;
+}
+
+.news-cards-container {
+  .card {
+    height: 100%;
+  }
+}

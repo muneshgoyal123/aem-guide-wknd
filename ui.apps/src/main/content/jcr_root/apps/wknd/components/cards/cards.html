@@ -1,0 +1,35 @@
+<sly
+  data-sly-use.model="com.adobe.aem.guides.wknd.core.models.Cards"
+  data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+>
+  <section>
+    <div class="img-double-cards-container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="${model.image1}" />
+        </div>
+        <div class="col-md-6">
+          <img src="${model.image2}" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="bio-card card">
+    <img src="${model.image3}" class="card-img-top" />
+    <div class="card-body">
+      <h5 class="card-title">${model.title}</h5>
+      <div class="card-text">${model.text}</div>
+    </div>
+  </div>
+  <div class="card patient_story-card">
+    <img
+      src="${model.image4}"
+      class="card-img-top"
+      alt="patient_story-card-image"
+    />
+    <div class="card-body">
+      <h5 class="card-title">${model.title1}</h5>
+      <p class="card-text">${model.history}</p>
+    </div>
+  </div>
+</sly>

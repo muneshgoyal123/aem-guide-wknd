@@ -1,0 +1,49 @@
+.cmp-image {
+    
+}
+.cmp-image__link {}
+.cmp-image__image {}
+.cmp-image__title {}
+
+
+
+.image.cmp-image-primary {
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 40px;
+    padding: 20px;
+    width: 80%;
+    border: brown 5px solid;
+}
+
+
+.image.cmp-image-secondary {
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 40px;
+    padding: 20px;
+    width: 80%;
+    border: rebeccapurple 5px solid;
+}
+
+
+.image.cmp-image-align {
+
+    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 40px;
+    padding: 20px;
+    width: 80%;
+    margin-left: 97px
+}
+
+.image{
+    &.cmp-image-first{
+    
+        .cmp-image__image{
+            width: 80%;
+            margin: 10px;   
+        }
+    }
+}
+

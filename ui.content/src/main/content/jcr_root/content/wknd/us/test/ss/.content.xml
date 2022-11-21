@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-05-18T13:42:53.071+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/wknd/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="ss"
+        sling:resourceType="wknd/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wknd/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wknd/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:lastModified="{Date}2022-03-30T11:17:25.279+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Welcome To Rajasthan Tourism"
+                    sling:resourceType="wknd/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd/components/container"
+                    layout="responsiveGrid">
+                    <carousel
+                        jcr:created="{Date}2022-05-18T13:39:29.558+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-05-18T13:40:37.321+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wknd/components/carousel"
+                        autopauseDisabled="false"
+                        autoplay="false"
+                        delay="5000">
+                        <image
+                            cq:panelTitle="image1"
+                            jcr:created="{Date}2022-05-18T13:39:36.350+05:30"
+                            jcr:createdBy="admin"
+                            jcr:lastModified="{Date}2022-05-18T13:40:11.138+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wknd/components/image"
+                            altValueFromDAM="true"
+                            displayPopupTitle="true"
+                            fileReference="/content/dam/bio-card-1.png"
+                            isDecorative="false"
+                            titleValueFromDAM="true"/>
+                        <item_1652861429596
+                            cq:panelTitle="image2"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="wknd/components/image"/>
+                    </carousel>
+                    <vertical_slider2
+                        jcr:created="{Date}2022-05-18T13:41:25.936+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-05-18T13:42:53.065+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wknd/components/vertical-slider2">
+                        <carousal jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                description="This is Air Image"
+                                images="/content/dam/th.jpg"
+                                title="First Image"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                description="This is Hawamahal image"
+                                images="/content/dam/Baby_Janelle 1.png"
+                                title="Second Image"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                description="This is Demo image"
+                                images="/content/dam/user.jpg"
+                                title="aaaaaaaaaaaa"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                description="This is fourth Demo image"
+                                images="/content/dam/Baby_Janelle 1.png"
+                                title="a"/>
+                        </carousal>
+                    </vertical_slider2>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

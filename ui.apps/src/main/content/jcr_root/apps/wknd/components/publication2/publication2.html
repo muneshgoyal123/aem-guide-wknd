@@ -1,0 +1,19 @@
+<sly data-sly-use.model="com.adobe.aem.guides.wknd.core.models.Publication2" 
+data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+
+<div class="cmp-main">
+<div class="cmp-main__title">
+<p>${model.title1}</p> 
+   </div>
+    <div class="cmp-main_item" data-sly-list.item="${model.books}">
+    <ul>
+        <li>Name: ${item.title2}</li><span>|</span>
+        <li>Date: ${item.date}</li><br>
+        <li>Description: ${item.description}</li><br>
+        <li>Copies: ${item.copies}</li>
+        <br>
+    </ul>
+</div> 
+</div>
+
+   </sly>

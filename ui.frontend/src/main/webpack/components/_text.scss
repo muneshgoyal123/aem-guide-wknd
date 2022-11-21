@@ -1,0 +1,67 @@
+.cmp-text {}
+.cmp-text__paragraph {}
+
+
+.text{
+
+    &.cmp-text-text1
+    {
+        .cmp-text{
+
+            color:gray;
+            padding-top: 70px;
+    /* padding-bottom: 50px; */
+    text-align: justify;
+    margin-left: 40px;
+    margin-right: 50px;
+        }
+    }
+}
+
+.text{
+
+    &.cmp-text-title
+    {
+        .cmp-text{
+
+            color:goldenrod;
+            text-transform: uppercase;
+    /* text-shadow: 0 0 black; */
+    font-size: x-large;
+    font-style: italic;
+    letter-spacing: 5px;
+            
+        }
+    }
+}
+
+.text.cmp-text-primary {
+    padding-top: 120px;
+    /* margin: 20px; */
+    text-align: center;
+    letter-spacing: 1px;
+    margin-right: 50px;
+    text-decoration: none;
+    text-align: justify;
+}
+
+.text.cmp-text-secondary {
+    padding-top: 120px;
+    /* margin: 20px; */
+    text-align: center;
+    letter-spacing: 1px;
+    margin-right: 50px;
+    text-decoration: none;
+    text-align: justify;
+    color: blue;
+}
+
+.text.cmp-text-color {
+    padding-top: 180px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-right: 50px;
+    text-decoration: none;
+    text-align: justify;
+    color: blue;
+}

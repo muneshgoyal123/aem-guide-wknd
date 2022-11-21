@@ -1,0 +1,29 @@
+.cmp-banner__image {
+  position: relative;
+}
+
+h2.cmp-banner__name {
+  position: absolute;
+  top: 200px;
+  left: 40%;
+
+  margin: 0 auto;
+  height: 50px;
+  letter-spacing: 2px;
+  word-spacing: 10px;
+}
+
+// .cmp-banner__image {
+//   position: relative;
+
+//   &__name {
+//     position: absolute;
+//     top: 200px;
+//     left: 40%;
+
+//     margin: 0 auto;
+//     height: 50px;
+//     letter-spacing: 2px;
+//     word-spacing: 10px;
+//   }
+// }

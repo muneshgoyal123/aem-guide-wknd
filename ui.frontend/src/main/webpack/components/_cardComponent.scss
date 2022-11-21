@@ -1,0 +1,14 @@
+.cmp-mainhero {
+    margin: 15px;
+    display: block;
+
+    &__image {
+        display: flex;
+
+        &-link {
+            margin: auto;
+            height: 300px;
+            width: 350px;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+<div class="cmp-mainhero" data-sly-use.banner="com.adobe.aem.guides.wknd.core.models.CardComponent"
+  data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+  data-sly-test.hasContent="${!banner.empty}">
+
+  <div class="cmp-mainhero__image">
+    <img src="${banner.src}" class="cmp-mainhero__image-link" alt="${banner.alt}" />
+
+
+  </div>
+
+  <div class="cmp-mainhero__heading">
+
+    <h2 class="cmp-myhero__fname">${banner.firstName} ${banner.lastName}</h2>
+
+
+  </div>
+
+</div>
+
+<sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=!hasContent}"></sly>

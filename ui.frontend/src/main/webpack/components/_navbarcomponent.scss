@@ -1,0 +1,57 @@
+.cmp-nav {
+    /* color: aqua; */
+    color: yellowgreen;
+
+
+        &__logo{
+            margin-right: auto;
+        }
+
+        &__button{
+            
+            
+                    display: flex;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                    
+                    
+                    background-color: #555;
+                    -webkit-box-pack: center;
+                    
+                    justify-content: center;
+                    padding-top: 0px;
+                    
+                    width: 100%;
+                    align-items: center;
+                    padding: 12px;
+                    margin-right: auto;
+
+                   
+
+        &-Home,&-About,&-Places,&-Hotels,&-Contact {
+            padding: 10px;
+            margin: 10px;
+            font-size: 30px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-left: auto; 
+            text-decoration: none;
+            color: #e0c5cc;
+        }
+
+        &-Home:hover,&-About:hover,&-Places:hover,&-Hotels:hover,&-Contact:hover {
+            background-color: #24381396;
+            border-radius: 3rem;
+            transition: 1.5s ease;
+            
+        }
+    }
+
+
+}
+
+@media screen and(max-width:800px){
+     .cmp-nav__button{
+         flex-direction: column;
+     }   
+}

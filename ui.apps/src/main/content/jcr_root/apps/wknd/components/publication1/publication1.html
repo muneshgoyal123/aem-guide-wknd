@@ -1,0 +1,59 @@
+<!--/* <p class="cmp-main">${properties.title1}</p>
+
+<div data-sly-list.bookMultifield="${resource.getChildren}">
+
+    <div data-sly-test="${bookMultifield.name == 'book'}">
+        
+
+        <ul class="cmp-publication_book" data-sly-list.book="${bookMultifield.getChildren}">
+            <li>Title: ${book.title2}</li><span> | </span>
+            <li>Date:${book.date}</li>
+            </br></br>
+            <li>Description:${book.description}</li>
+           </br></br>
+                
+        </ul>
+    </div>
+</div>
+
+ */-->
+
+
+  <!--/* <div data-sly-use.model="com.theopendle.core.models.demo.DemoModel">
+    <p>Continents</p>
+
+    
+    <ul data-sly-list.continent="${model.continents}">
+        <li>Name: ${continent.name}</li>
+        <li>Countries:
+
+        
+            <ul data-sly-list.country="${continent.countries}">
+                <li>Name: ${country.name}</li>
+                <li>Code: ${country.code}</li>
+            </ul>
+        </li>
+    </ul>
+    
+</div>  */-->
+
+
+
+<sly data-sly-use.model="com.adobe.aem.guides.wknd.core.models.Publication1" 
+data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+
+<p>${model.title1}</p> 
+    <!--/* <div data-sly-list.item="${model.bookDetailsMap}"> */-->
+    <div data-sly-list.item="${model.bookDetailsMap}">
+    
+   <p>Name: ${item.title2}</p>
+    <!--/*<p>Date: ${item.date}</p>
+   <p>Description: ${item.description}</p> */-->
+
+</div> 
+   
+  
+   </sly>
+
+   
+   

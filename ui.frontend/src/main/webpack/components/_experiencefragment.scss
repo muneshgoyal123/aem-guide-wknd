@@ -1,0 +1,66 @@
+//.cmp-experiencefragment {}
+// .cmp-experiencefragment--<name> {}
+
+.cmp-header-primary.experiencefragment {
+  text-align: center;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 4px;
+  color: forestgreen;
+}
+
+.cmp-header-secondary.experiencefragment {
+  text-align: center;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 4px;
+  color: rgb(139, 34, 34);
+}
+
+.experiencefragment.cmp-footer-primary {
+  padding-top: 50px;
+  margin: 10px;
+  font-size: x-large;
+  letter-spacing: 2px;
+  color: blue;
+}
+.experiencefragment.cmp-footer-secondary {
+  padding-top: 50px;
+  margin: 10px;
+  font-size: x-large;
+  letter-spacing: 2px;
+  color: burlywood;
+}
+
+.experiencefragment.cmp-text-header {
+  background-color: #4caf50;
+
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  /* font-size: 16px; */
+  /* cursor: pointer; */
+  /* float: left; */
+}
+
+.experiencefragment.cmp-text-footer {
+  background-color: #4caf50;
+  border: 1px solid green;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.experiencefragment.cmp-header-color {
+  background-color: gray;
+  padding: 20px;
+  margin: 5px;
+}
+
+.experiencefragment.cmp-header-left {
+  border: solid;
+  padding: 10px;
+  margin: 10px;
+  background: beige;
+}

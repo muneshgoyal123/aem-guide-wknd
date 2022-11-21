@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@300;400;500;600;700;800&display=swap");
+
+body {
+  font-family: var(--font-link-family);
+}
+
+h1,
+.heading1-primary,
+.heading1-secondary {
+  font-family: var(--font-title-h1-family);
+  font-size: var(--font-title-h1-size);
+  font-weight: var(--font-title-h1-weight);
+  color: var(--clr-primary);
+}
+
+h2,
+.heading2-primary,
+.heading2-secondary {
+  font-family: var(--font-title-h2-family);
+  font-size: var(--font-title-h2-size);
+  font-weight: var(--font-title-h2-weight);
+  color: var(--clr-primary);
+}
+
+h3,
+.heading3-primary,
+.heading3-secondary {
+  font-family: var(--font-title-h3-family);
+  font-size: var(--font-title-h3-size);
+  font-weight: var(--font-title-h3-weight);
+  color: var(--clr-primary);
+}
+
+h4,
+.heading4-primary,
+.heading4-secondary {
+  font-family: var(--font-title-h4-family);
+  font-size: var(--font-title-h4-size);
+  font-weight: var(--font-title-h4-weight);
+  color: var(--clr-primary);
+}
+
+h5,
+.heading5-primary,
+.heading5-secondary {
+  font-family: var(--font-title-h5-family);
+  font-size: var(--font-title-h5-size);
+  font-weight: var(--font-title-h5-weight);
+  color: var(--clr-primary);
+}
+
+h6,
+.heading6-primary,
+.heading6-secondary {
+  font-family: var(--font-title-h6-family);
+  font-size: var(--font-title-h6-size);
+  font-weight: var(--font-title-h6-weight);
+  color: var(--clr-primary);
+}
+
+.heading1-secondary,
+.heading2-secondary,
+.heading3-secondary,
+.heading4-secondary,
+.heading5-secondary,
+.heading6-secondary {
+  color: var(--clr-black);
+}
+
+.bodyCopy {
+  &,
+  & p {
+    font-family: var(--font-bodyCopy-family);
+    font-size: var(--font-bodyCopy-size);
+    font-weight: var(--font-bodyCopy-weight);
+    color: var(--clr-black);
+    line-height: 1.75;
+  }
+  p:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.header-page-title {
+  font-family: var(--font-pageTitle-family);
+  font-size: var(--font-pageTitle-family);
+  font-weight: var(--font-pageTitle-family);
+  color: var(--font-pageTitle-family);
+}

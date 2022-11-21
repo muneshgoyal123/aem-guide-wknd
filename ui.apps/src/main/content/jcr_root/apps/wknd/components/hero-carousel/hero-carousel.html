@@ -1,0 +1,80 @@
+<section class="hero-carousel">
+  <div
+    id="carouselExampleIndicators"
+    class="carousel slide"
+    data-bs-touch="true"
+    data-bs-ride="carousel"
+    data-interval="3000"
+  >
+    <div class="carousel-inner">
+    <sly data-sly-repeat.carousalimages="${resource.getChildren}">
+        <sly data-sly-test="${carousalimages.name == 'herocarousal'}">
+         <sly data-sly-repeat.herocarousal="${carousalimages.getChildren}">
+      <div class="carousel-item active">
+      
+        <picture>
+          <source
+            srcset="${herocarousal.images}"
+            media="(max-width: 600px)"
+          />
+          <img src="${herocarousal.images}" />
+        </picture>
+
+        <div class="col-md-6 align-items-center">
+          <div class="hero-content">
+            <a
+              class="btn-link btn-border-round btn-clr-blue"
+              href="JavaScript:void(0);"
+            >
+            </a>
+          </div>
+          </div>
+        </div>
+        </div>
+        </sly>
+        </sly>
+        </sly>
+     
+    </div>
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+    <button
+      class="carousel-control-prev"
+      data-bs-target="#carouselExampleIndicators"
+      type="button"
+      data-bs-slide="prev"
+    >
+      <span class="fa fa-angle-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      data-bs-target="#carouselExampleIndicators"
+      type="button"
+      data-bs-slide="next"
+    >
+      <span class="fa fa-angle-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+</section>

@@ -1,0 +1,16 @@
+<h1>AUTHORS OF THE BOOKS</h1>
+<div
+  data-sly-use.model="com.adobe.aem.guides.wknd.core.models.AuthorBooks"
+></div>
+<div>Author Name:${model.authorName}</div>
+<div data-sly-list.item="${model.authorBooks}">
+  BOOK Number:${itemList.count}
+  <p>Name Of BOOK : <b>${item}</b></p>
+</div>
+<p>ALL Book : <b>${model.authorBooks @ join=', '}</b></p>
+<div data-sly-list.item="${model.bookDetailsWithMap}">
+  Book : ${itemList.count}
+  <p>Book : <b>${item.book} </b></p>
+  <p>Subject : <b>${item.subject}</b></p>
+  <p>Publish : <b>${item.published}</b></p>
+</div>

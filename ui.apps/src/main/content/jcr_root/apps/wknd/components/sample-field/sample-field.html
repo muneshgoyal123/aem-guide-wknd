@@ -1,0 +1,19 @@
+<div
+  data-sly-use.model="com.adobe.aem.guides.wknd.core.models.SampleField"
+  data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+  class="cmp-sample"
+>
+  <div class="cmp-sample__firstname">${model.fname}</div>
+  <div class="cmp-sample__lastname">${model.lname}</div>
+  <div class="cmp-sample__languages">${model.languages}</div>
+  <div class="cmp-sample__userImage"><img src="${model.userImage}" /></div>
+  <div
+    data-sly-list.item="${model.userInformation}"
+    class="cmp-sample_userInformation"
+  >
+    <p>UserClass : <b>${item.userClass} </b></p>
+    <p>Designation : <b>${item.designation}</b></p>
+    <p>Age : <b>${item.age}</b></p>
+  </div>
+  <sly data-sly-call="${placeholderTemplate.placeholder @ isEmpty=true}"></sly>
+</div>

@@ -1,0 +1,17 @@
+<sly data-sly-use.model="com.adobe.aem.guides.wknd.core.models.StudentCard"
+data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+   <sly data-sly-test="${!model.empty}">
+  
+   <div class="cmp-student">
+   <div class="cmp-student_fname">${model.FirstName @context='html'}</div>
+   <div class="cmp-student_lname">${model.LastName @context='html'}</div>
+   <div class="cmp-student_address">${model.Address @context='html'}</div>
+
+   <div class="cmp-student_email">${model.Email @context='html'}</div>
+   <img src="${model.Image}"/>
+   </div>
+   
+   </sly>
+   </sly>
+
+   

@@ -1,0 +1,211 @@
+:root {
+  /** Theme Colors **/
+  @each $name, $color in $colors {
+    --clr-#{$name}: #{$color};
+  }
+
+  /** Theme Fonts **/
+  @each $variant, $font in $fonts {
+    --font-#{$variant}: #{$font};
+  }
+
+  /** Theme z-indexing **/
+  @each $element, $value in $z-indexes {
+    --z-index-#{$element}: #{$value};
+  }
+
+  /** Theme Font-sizes **/
+  @each $element, $value in $font-sizes {
+    --font-#{$element}-size: #{$value};
+  }
+
+  //** Typography **//
+
+  --font-title-h1-family: var(--font-primary);
+  --font-title-h1-size: var(--font-h1-size);
+  --font-title-h1-weight: normal;
+
+  --font-title-h2-family: var(--font-primary);
+  --font-title-h2-size: var(--font-h2-size);
+  --font-title-h2-weight: normal;
+
+  --font-title-h3-family: var(--font-primary);
+  --font-title-h3-size: var(--font-h3-size);
+  --font-title-h3-weight: normal;
+
+  --font-title-h4-family: var(--font-primary);
+  --font-title-h4-size: var(--font-h4-size);
+  --font-title-h4-weight: normal;
+
+  --font-title-h5-family: var(--font-primary);
+  --font-title-h5-size: var(--font-h5-size);
+  --font-title-h5-weight: bold;
+
+  --font-title-h6-family: var(--font-primary);
+  --font-title-h6-size: var(--font-h6-size);
+  --font-title-h6-weight: bold;
+
+  --font-bodyCopy-family: var(--font-primary);
+  --font-bodyCopy-weight: normal;
+
+  --font-pageTitle-family: var(--font-primary);
+  --font-pageTitle-size: 27px;
+  --font-pageTitle-weight: 600;
+  --font-pageTitle-color: var(--clr-primary-dark);
+  --font-pageTitle-padding: 19px 0;
+
+  --font-link-family: var(--font-primary);
+  --font-link-weight: normal;
+
+  //** Breadcrumb **//
+  --font-breadcrumb-family: var(--font-primary);
+  --font-breadcrumb-weight: normal;
+  --font-breadcrumb-clr: var(--clr-primary-light);
+  --font-breadcrumb-active-weight: bold;
+
+  //** Footer **//
+  --footer-left-bg: var(--clr-black);
+  --footer-right-bg: #151515;
+  --font-footer-text-clr: var(--clr-white);
+  --font-footerBody-title-family: var(--font-primary);
+  --font-footerBody-title-size: 40px;
+  --font-footerBody-title-weight: 300;
+
+  --font-footerBody-text-family: var(--font-primary);
+  --font-footerBody-text-size: 16px;
+  --font-footerBody-text-weight: normal;
+
+  --font-footerSection-title-family: var(--font-primary);
+  --font-footerSection-title-size: 18px;
+  --font-footerSection-title-weight: normal;
+
+  --font-footerSection-text-family: var(--font-primary);
+  --font-footerSection-text-size: 16px;
+  --font-footerSection-text-weight: normal;
+
+  --font-footerBottom-link-family: var(--font-primary);
+  --font-footerBottom-link-size: 14px;
+  --font-footerBottom-link-weight: normal;
+
+  --font-footerCopy-text-family: var(--font-primary);
+  --font-footerCopy-text-size: 14px;
+  --font-footerCopy-text-weight: normal;
+
+  --font-footerOther-text-family: var(--font-primary);
+  --font-footerOther-text-size: 16px;
+  --font-footerOther-text-weight: normal;
+
+  //** Buttons **//
+  --btn-font-family: var(--font-primary);
+  --btn-font-size: 18px;
+  --btn-font-weight: 600;
+  --btn-font-clr: var(--clr-white);
+  --btn-border-size: 1px;
+  --btn-border-style: solid;
+  --btn-padding: 18px 30px;
+  --btn-line-height: 18px 30px;
+
+  --btn-primary-bg-clr: var(--clr-primary);
+  --btn-primary-border: var(--btn-primary-bg-clr);
+  --btn-primary-bg-clr-hover: var(--clr-black);
+  --btn-primary-border-hover: var(--btn-primary-bg-clr-hover);
+  --btn-primary-bg-clr-disable: var(--clr-secondary);
+  --btn-primary-border-disable: var(--btn-primary-bg-clr-disable);
+
+  --btn-secondary-bg-clr: var(--clr-white);
+  --btn-secondary-border: var(--clr-primary-dark);
+  --btn-secondary-bg-clr-hover: var(--clr-black);
+  --btn-secondary-border-hover: var(--btn-secondary-bg-clr-hover);
+  --btn-secondary-bg-clr-disable: var(--btn-secondary-bg-clr);
+  --btn-secondary-border-disable: var(--clr-secondary-dark);
+
+  --btn-tertiary-bg-clr: var(--clr-black);
+  --btn-tertiary-border: var(--btn-tertiary-bg-clr);
+  --btn-tertiary-bg-clr-hover: var(--clr-primary);
+  --btn-tertiary-border-hover: var(--btn-tertiary-bg-clr-hover);
+  --btn-tertiary-bg-clr-disable: var(--btn-secondary);
+  --btn-tertiary-border-disable: var(--btn-tertiary-bg-clr-disable);
+
+  //** Alternet Text **//
+  --alternetText-font-family: var(--font-primary);
+  --alternetText-font-size: 16px;
+  --alternetText-font-weight: normal;
+  --alternetText-font-clr: var(--clr-secondary-darker);
+
+  //** Alerts **//
+  --alert-font-family: var(--font-alternetText-family);
+  --alert-font-size: var(--font-alternetText-size);
+  --alert-font-weight: var(--font-alternetText-weight);
+  --alert-font-clr: var(--font-alternetText-clr);
+  --alert-link-clr: var(--clr-primary);
+  --alert-bg: var(--clr-secondary-light);
+  --alert-icon-size: 30px;
+  --alert-icon-close-color: var(--clr-secondary);
+  --alert-icon-close-size: 44px;
+  --alert-padding: 20px 15px;
+  --alert-margin: 0 0 10px 0;
+  --alert-shadow: 0px 2px 6px rgba(0, 0, 0, 0.102);
+  --alert-info-icon-color: #079dd9;
+  --alert-danger-icon-color: #bf0d0d;
+  --alert-notification-icon-color: #f28907;
+
+  //** Header **//
+  --header-utility-nav-bg: var(--clr-white);
+  --header-utility-nav-border: var(--clr-secondary);
+  --header-utility-nav-height: 80px;
+  --header-utility-nav-item-spacing: 55px;
+  --header-utility-nav-item-font-size: 16px;
+  --header-utility-nav-item-font-weight: 500px;
+  --header-utility-nav-item-font-clr: var(--clr-black);
+  --header-utility-nav-item-icon-space: 6px;
+  --header-utility-nav-item-icon-size: 20px;
+  --header-utility-nav-item-icon-search-size: 30px;
+  --header-logo-width: 190px;
+  --header-logo-height: 60px;
+  --header-logo-spacing: 100px;
+
+  --header-main-nav-bg: var(--clr-secondary-light);
+  --header-main-nav-border: var(--clr-secondary);
+  --header-main-nav-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  --header-main-nav-link-color: var(--clr-black);
+  --header-main-nav-link-color-hover: var(--clr-primary);
+  --header-main-nav-link-active: bold;
+  --header-main-nav-link-font-size: 18px;
+  --header-main-nav-link-line-height: 1.35;
+  --header-main-nav-link-padding: 20px 0;
+  --header-main-dropdown-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --header-main-nav-height: 90px;
+  --header-main-nav-z-index: 1000;
+  --header-main-nav-menu-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  --header-main-nav-menu-z-index: 1000;
+  --header-main-nav-menu-border-radius: 0px 0px 10px 10px;
+  --header-main-nav-menu-padding: 0 20px;
+  --header-main-nav-menu-button-font-size: 20px;
+  --header-main-nav-menu-button-line-height: 27px;
+  --header-main-nav-menu-button-border-radius: 10px;
+  --header-main-nav-menu-button-padding: 13px 20px;
+  --header-main-nav-item-spacing: 80px;
+
+  --header-hamburger-menu-bg: var(--clr-primary);
+  --header-hamburger-menu-bg-hover: var(--clr-primary-dark);
+  --header-hamburger-menu-clr: var(--clr-white);
+  --header-hamburger-menu-height: 80px;
+  --header-hamburger-menu-width: 90px;
+  --header-hamburger-menu-lines-clr: var(--clr-white);
+  --header-hamburger-menu-padding: 8px 0 0 0;
+  --header-hamburger-menu-spacing: 0 2px 0 -112px;
+  --header-hamburger-menu-font-size: 18px;
+  --header-hamburger-menu-font-weight: 500;
+  --header-hamburger-menu-icon-size: 40px;
+  --header-hamburger-menu-icon-weight: 300;
+  --header-hamburger-menu-icon-line-height: 0.8;
+
+  //** signup **//
+  --signup-title-font-size: 30px;
+  --signup-title-font-weight: 400px;
+  --signup-title-font: var(--font-primary);
+  --signup-title-line-height: 40px;
+  --signup-title-letter-spacing: 0.02em;
+  --signup-title-clr: var(--clr-white);
+  --signup-bg-clr: var(--clr-accent-primary);
+}

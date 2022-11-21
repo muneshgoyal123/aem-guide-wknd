@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-05-26T18:45:45.491+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/wknd/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="policy"
+        sling:resourceType="wknd/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wknd/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wknd/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:lastModified="{Date}2022-03-30T11:17:25.279+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Welcome To Rajasthan Tourism"
+                    sling:resourceType="wknd/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd/components/container"
+                    layout="responsiveGrid">
+                    <hero_carousel_253486021
+                        jcr:created="{Date}2022-05-26T17:42:36.547+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-05-26T17:47:23.597+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wknd/components/hero-carousel">
+                        <herocarousal jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                images="/content/dam/th.jpg"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                images="/content/dam/Baby_Janelle 1.png"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                images="/content/dam/contact.jpg"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                images="/content/dam/air.jpg"/>
+                        </herocarousal>
+                    </hero_carousel_253486021>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

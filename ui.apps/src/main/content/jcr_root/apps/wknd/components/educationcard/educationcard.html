@@ -1,0 +1,19 @@
+<sly data-sly-use.model="com.adobe.aem.guides.wknd.core.models.EducationCard" 
+data-sly-use.placeholderTemplate="core/wcm/components/commons/v1/templates.html"
+<div class="education">
+  <div class="education container">
+    <h3 class="education__title">${model.title1}</h3>
+    <div class="education__container">
+      <div class="education__container-school">
+      <sly data-sly-list.item="${model.institutes}">
+        <div class="education__container-school-box">
+          <h6 class="education__container-school-title">${item.title2}</h6>
+          <p class="education__container-school-para">
+           ${item.history}
+          </p>
+        </div>
+        </sly>
+      </div>
+    </div>
+  </div>
+</div>

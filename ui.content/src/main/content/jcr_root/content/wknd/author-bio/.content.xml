@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-05-25T17:25:24.149+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/wknd/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Author Bio"
+        sling:resourceType="wknd/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wknd/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wknd/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:lastModified="{Date}2022-03-30T11:17:25.279+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Welcome To Rajasthan Tourism"
+                    sling:resourceType="wknd/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd/components/container"
+                    layout="responsiveGrid">
+                    <author
+                        jcr:created="{Date}2022-05-23T14:28:10.616+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-05-23T19:18:24.644+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wknd/components/author"
+                        fname="munesh"
+                        lname="goyal"
+                        professor="true"/>
+                    <author_1585846012
+                        jcr:created="{Date}2022-05-23T17:39:29.415+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-05-23T17:39:29.415+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wknd/components/author"/>
+                    <author_books_854016719
+                        jcr:created="{Date}2022-05-23T19:12:35.957+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-05-23T19:16:52.808+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wknd/components/author-books"
+                        authorname="John Peter"
+                        books="[ALEXA ,KERVIN]"/>
+                    <author_books
+                        jcr:created="{Date}2022-05-23T19:17:12.025+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-05-23T19:17:39.475+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wknd/components/author-books"
+                        authorname="w"
+                        books="w"/>
+                    <author_books_1836117463
+                        jcr:created="{Date}2022-05-23T19:23:12.240+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-05-23T19:31:11.187+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wknd/components/author-books"
+                        authorname="w"
+                        books="wa"/>
+                    <author_books_2067205747
+                        jcr:created="{Date}2022-05-23T19:41:20.836+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-05-24T11:40:47.989+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wknd/components/author-books"
+                        authorname=" Jillian Ortiz"
+                        books="[To Paradise\,&quot; by Hanya Yanagihara,Violeta\,&quot; by Isabel Allende,Black Cake\,&quot; by Charmaine Wilkerson]"/>
+                    <author_books_603436909
+                        jcr:created="{Date}2022-05-24T13:38:12.429+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-05-24T17:47:09.203+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wknd/components/author-books"
+                        authorname=" Jillian Ortiz"
+                        books="To Paradise,&quot; by Hanya Yanagihara">
+                        <bookdetailswithmap jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                book="To Paradise"
+                                published="30-03-2022"
+                                subject="you'll find that each of the characters in each of the three different Americas in this book"/>
+                        </bookdetailswithmap>
+                    </author_books_603436909>
+                    <hero_carousel_1035880573
+                        jcr:created="{Date}2022-05-25T16:43:39.417+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2022-05-25T17:25:24.146+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wknd/components/hero-carousel">
+                        <herocarousal jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                images="/content/dam/OIP.jpg"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                images="/content/dam/air.jpg"/>
+                        </herocarousal>
+                    </hero_carousel_1035880573>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

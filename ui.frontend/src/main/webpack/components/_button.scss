@@ -1,0 +1,47 @@
+
+
+
+.cmp-button 
+{
+    display: inline-block; 
+     font-size: 16px; 
+    cursor: pointer; 
+     float: left;
+     background-color: black;
+    border-radius: 10px;
+    border: none;
+   
+}
+
+.cmp-button:hover{
+     
+}
+.cmp-button__text
+ {
+   text-decoration: none;
+   color: white;
+    
+}
+.cmp-button__icon 
+{
+       
+
+}
+
+
+.button{
+   &.cmp-button-primary{
+
+    .cmp-button{
+      background-color: #5b4caf;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+    }
+
+   }
+}
+
+
+
+//.cmp-button__icon--myIcon {}

@@ -1,0 +1,60 @@
+.alert {
+  font-family: var(--alert-font-family);
+  font-size: var(--alert-font-size);
+  font-weight: var(--alert-font-weight);
+  color: var(--alert-font-clr);
+  border-radius: var(--alert-border-radius);
+  background-color: var(--alert-bg);
+  box-shadow: var(--alert-shadow);
+  margin: var(--alert-margin);
+
+  &-wrapper {
+    position: static;
+    inset: 0 0 auto 0;
+    background-color: var(--clr-white);
+    z-index: 1100;
+  }
+
+  &-container {
+    @extend .custom-container;
+    padding: var(--alert-padding);
+    display: flex;
+    align-items: center;
+  }
+
+  &-message {
+    padding: 0 20px;
+  }
+
+  &-icon {
+    background: none;
+    border: 0;
+    padding: 0;
+    font-size: var(--alert-icon-size);
+    line-height: 1;
+
+    &--close {
+      margin-left: auto;
+      cursor: pointer;
+      color: var(--alert-icon-close-color);
+      font-size: var(--alert-icon-close-size);
+    }
+  }
+
+  a {
+    color: var(--alert-link-clr);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+$variants: info, danger, notification;
+@each $variant in $variants {
+  .alert--#{$variant} {
+    .alert-icon--variant {
+      color: var(--alert-#{$variant}-icon-color);
+    }
+  }
+}

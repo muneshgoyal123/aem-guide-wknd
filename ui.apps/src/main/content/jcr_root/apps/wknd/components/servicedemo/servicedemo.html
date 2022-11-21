@@ -1,0 +1,7 @@
+<h1>Service Demo</h1>
+<div data-sly-use.service="com.adobe.aem.guides.wknd.core.models.ServiceDemo"></div>
+
+<div data-sly-list.item="${service.pageList}">
+    <p> Page ${itemList.count} Title : <b>${item.title} </b></p>
+    
+</div>

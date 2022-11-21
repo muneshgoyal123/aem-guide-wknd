@@ -1,0 +1,37 @@
+.education{
+    margin-top: var(--font-h1-size);
+    margin-bottom: var(--font-h1-size);
+    &__title{
+        color:var(--clr-primary);
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 40.85px;
+        letter-spacing: 2%;
+    }
+    &__container{
+        display: flex;
+        @include max-screen(lg){
+            flex-direction: column;
+        }
+        &-school{
+            width: 50%;
+            @include max-screen(lg){
+                width: 100%;
+            }
+            &-box{
+                margin-top: 30px;
+            }
+            &-title{
+                color: $grey;
+                font-weight: 400;
+                font-size:var(--font-h4-size);
+                line-height: 27.24px;
+                letter-spacing: 2%;
+            }
+            &-para{
+                font-size: var(--font-h6-size);
+                line-height: 28px;
+            }
+        }
+    }
+}
